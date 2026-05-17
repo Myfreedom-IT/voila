@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Manrope", sans-serif;
+}
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  background-image: url(./images/coffe-backround.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 126px 0 115px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  gap: 50px;
+  font-family: Manrope;
+}
+
+.name {
+  font-family: "Playfair", serif;
+  font-size: 96px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-wrapper{
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  gap: 15px;
+}
+
+.header-text{
+  padding-top: 70px;
+  color: white;
+  width: 700px;
+  line-height: 60px;
+}
+
+.header-text p{
+  font-size: 20px;
+}
+
+.header-text h1{
+font-family: "Playfair", serif;
+  font-size: 72px;
+}
+
+.main{
+  background-color: #F1F0EE;
+}
+
+.discount{
+  background-color: #E2D9C8;          
+  display: flex;
+  justify-content: space-between;    
+}
+
+.discount img{
+  width: 520px;
+  height: 300px;
+}
+
+.discount p{
+  display: flex;
+  font-family: "Playfair", serif;
+  color: 30261C;
+  font-weight: bold;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  font-family: "Playfair", serif;
+  color: white;
+}
+
+footer{
+  background-color: #30261C;
+}
+
+.privacy, .services, .about-us, .information, .social-media, .footer-coffee{
+  flex: 1;
+  min-width: 120px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 1370px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .coffee-beans-class{ display: none;}
+}
+
+@media (max-width: 900px) {
+  .privacy, .services, .about-us, .information, .social-media, .footer-coffee{
+    flex: none;  
+    min-width: 90%;
+  }
+  .header-text h1{
+    font-size: 40px;
+  }
+  .name{
+    font-size: 70px;
+  }
+  .discount p{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hand-with-coffee-bean-coffe-class{
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 650px) {
+  .header-text h1{
+    max-width: 350px;
+  }
+}@media (max-width: 610px) {
+  .discount{
+    display: none;
+  }
+  .header-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+.image-container {
+             position: relative;  /*Важно! Родитель с relative */
+            display: inline-block;  /* Чтобы контейнер был по размеру фона */
+        }
+        
+        /* Фоновая (большая) картинка */
+        /* .background-image {
+            display: block;
+            width: 100%;        /* Или задайте конкретную ширину */
+            /* max-width: 800px;   /* Например, 800px */
+            /* height: auto; */
+        /* } */ */ */
+        
+        /* Маленькая картинка поверх */
+        .small-image {
+            position: absolute;   /* Абсолютное позиционирование */
+            /* width: 50px;          /* Размер маленькой картинки */
+            /* height: 50px; */ 
+            cursor: pointer;
+            /* transition: transform 0.2s; */
+        }
+        
+        /* .small-image:hover {
+            transform: scale(1.1);
+        } */
+        
+        /* Всплывающее окошко */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 220px;
+            background: white;
+            border-radius: 10px;
+            padding: 12px 15px;
+            /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+            display: none;
+            /* z-index: 1000; */
+            /* font-family: Arial, sans-serif; */
+            border: 1px solid #ddd;
+        }
+        
+        .popup-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .popup-text {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .close-popup {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            float: right;
+        }
+        
+        .close-popup:hover {
+            background: #cc0000;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }

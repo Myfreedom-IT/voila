@@ -1,0 +1,331 @@
+  *{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: rgb(226, 217, 200);
+    padding: 20px 0 20px 0;
+} */
+
+.nav-link{
+    font-size: 30px;
+    
+}
+.fa-solid{
+    transition-duration: 0.5s;
+}
+.fa-solid:hover{
+    transform: scale(1.2);
+}
+.box-nav{
+    text-align: center;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(226, 217, 200);
+}
+.photo-arm{
+    transform: rotateY(180deg);
+}
+.photo-banner{
+    border-radius: 0;
+    max-width: 20%;
+}
+.text-banner{
+    font-family: "Playfair";
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+.cofe-heading{
+    font-family: "Playfair";
+    margin-bottom: 20px;
+    text-align: center;
+}
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.container{
+    max-width: 940px;
+     margin: 0 auto;
+}
+.box{
+    font-family: "Playfair";
+    max-width: 300px;
+    max-height: 500px; 
+    padding: 10px 15px 15px 15px;  
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgb(226, 217, 200);
+} 
+.info-box{
+    min-height: 57px;
+    max-height: 57px;
+}
+.info{
+    color: rgb(41, 0, 0);
+} 
+ img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.name-product{
+    font-size: 22px;
+}
+.info-volume-price p{
+    font-family: "Playfair";
+    font-size: 20px;
+}
+.button-size.active{
+    border: rgb(42, 0, 0) 2px solid;
+    background-color: rgb(42, 0, 0);
+    color: white;
+}
+.button-size:hover{
+    border: rgb(42, 0, 0) 2px solid;
+    transform: scale(1.2);
+    background-color: rgb(42, 0, 0);
+    color: white;
+}
+.button-size{
+    background-color:transparent;
+    border: rgb(42, 0, 0) 2px solid;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    flex-direction: 1s;
+    transition-duration: 1s;
+} 
+ .size{
+    display: flex;
+
+} 
+ .buttons-size{
+    display: flex;
+    gap: 10px;
+} 
+
+
+
+.info-volume-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 92px;
+    max-height: 92px;
+}
+
+
+.button-buy{
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(42, 0, 0);
+    font-size: 15px;
+    transition-duration: 1s;
+
+}
+
+
+.button-buy:hover{
+    background-color: rgb(230, 230, 230);
+    color: rgb(42, 0, 0);
+}
+
+button{
+    cursor: pointer;
+}
+
+.in-busket{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    padding: 5px 10px;
+    border: 3px black solid;
+    border-radius: 0 0 7px 7px;
+    justify-content: space-between;
+    width: 225px;
+    top: 0;
+    right: 100px;
+    visibility: hidden;
+    transition: 2s;
+    opacity: 0;
+}
+.check{
+    color: green;
+}
+.no-in-busket{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    padding: 5px 10px;
+    border: 3px black solid;
+    border-radius: 0 0 7px 7px;
+    justify-content: space-between;
+    width: 250px;
+    top: 0;
+    right: 100px;
+    visibility: hidden;
+    transition: 2s;
+    opacity: 0;
+}
+.x{
+    color: red;
+}
+
+.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+  background-image: url(../img/coffe-backround.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 126px 0 115px;
+  margin-bottom: 20px;
+}
+.box-nav h3{
+    font-family: "Playfair";
+}
+header a {
+  color: white;
+  font-family: "Playfair";
+}
+
+.name {
+  font-family: "Playfair", serif;
+  font-size: 96px;
+  font-weight: bold;
+  color: white;
+  transition-duration: 0.5s;
+}
+.name:hover{
+    transform: scale(1.1);
+}
+
+
+.nav-wrapper{
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  gap: 25px;
+}
+
+.header-text{
+  padding-top: 70px;
+  color: white;
+  width: 700px;
+  line-height: 60px;
+}
+
+.header-text p{
+  font-size: 20px;
+}
+
+.header-text h1{
+font-family: "Playfair", serif;
+  font-size: 72px;
+}
+
+main{
+  background-color: #F1F0EE;
+}
+
+.discount{
+  background-color: #E2D9C8;             
+  display: flex;
+  justify-content: space-between;      
+}
+
+.discount img{
+  width: 520px;
+  height: 300px;
+}
+
+.discount p{
+  display: flex;
+  font-family: "Playfair", serif;
+  color: 30261C;
+  font-weight: bold;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items:start;
+  font-family: "Playfair", serif;
+  color: white;
+}
+
+footer{
+  background-color: #30261C;
+  padding: 20px;
+}
+
+.privacy, .services, .about-us, .information, .social-media, .footer-coffee{
+  flex: 1;
+  max-width: 120px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.title-footer{
+    margin-bottom: 10px;
+}
+.list-social-media{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style:none;
+}
+.list-social-media{
+    font-size: 20px;
+}
+.icon-photo{
+    width: 25px;
+    height: 25px;
+}
+.box-info-footer{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    max-height: 100%;
+}
+.title-coffee-footer{
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+}
+

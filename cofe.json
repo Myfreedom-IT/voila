@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "s": { 
+            "size":200,
+            "price":5.5
+        },
+        "m": { 
+            "size":300,
+            "price":8.5
+        },
+        "l": { 
+            "size":400,
+            "price":9
+        },
+        "name": "Американо",
+        "description":"горячая вода ,эспрессо.",
+        "img": "../img/AMERICANO.jpg"
+    },
+    {
+        "id": 2,
+        "s": { 
+            "size":200,
+            "price":8
+        },
+        "l": { 
+            "size":400,
+            "price":9.5
+        },
+        "name": "Латте",
+        "description": " эспрессо,горячее молоко",
+        "img": "../img/LATTE.jpg"
+    },
+    {
+        "id": 3,
+        "s": { 
+            "size":200,
+            "price":7
+        },
+        "m": { 
+            "size":300,
+            "price":8
+        },
+        "l": { 
+            "size":400,
+            "price":11
+        },
+        "name": "Капучино",
+        "description": " эспрессо ,пышная молочная пена,горячее молоко",
+        "img": "../img/CAPU.jpg"
+    },
+    {
+        "id": 4,
+        "s": { 
+            "size":200,
+            "price":7.5
+        },
+        "l": { 
+            "size":400,
+            "price":11
+        },
+        "name": "Флэт уайт",
+        "description": " эспрессо,молоко вспененное, тонкий слой молочной пены",
+        "img": "../img/FLAT.jpg"
+    },
+    {
+        "id": 5,
+        "m": { 
+            "size":300,
+            "price":9.5
+        },
+        "l": { 
+            "size":400,
+            "price":11
+        },
+        "name": "Раф",
+        "description": "эспрессо, сливки, ванильный сироп",
+        "img": "../img/RAF.jpg"
+    },
+    {
+        "id": 6,
+        "s": { 
+            "size":40,
+            "price":5.5
+        },
+        "name": "Эксперссо",
+        "description": " молотый кофе, вода.",
+        "img": "../img/ASSPRESSO.jpg"
+    }
+]

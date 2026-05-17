@@ -1,0 +1,50 @@
+[
+    {
+         "id":22,
+        "price":5,
+        "name":"Значок",
+        "img":"../img/photo_5332537623152629995_w.jpg"
+    },
+    {
+         "id":23,
+        "price":10,
+        "name":"Блокнот",
+        "img":"../img/photo_5332537623152629996_w.jpg"
+    },
+    {
+         "id":24,
+        "price":25,
+        "name":"Фартук",
+        "img":"../img/photo_5332537623152629997_w.jpg"
+    },
+    {
+         "id":25,
+        "price":35,
+        "name":"Свечи",
+        "img":"../img/photo_5332537623152629998_w.jpg"
+    },
+    {
+         "id":26,
+        "price":200,
+        "name":"ETHIOPIAN YIRGACHEFFE",
+        "img":"../img/brazilian.jpg"
+    },
+    {
+         "id":27,
+        "price":200,
+        "name":"ETHIOPIAN YIRGACHEFFE",
+        "img":"../img/colombian.jpg"
+    },
+    {
+         "id":28,
+        "price":200,
+        "name":"ITALIAN DARK ROAST",
+        "img":"../img/italian.jpg"
+    },
+    {
+         "id":29,
+        "price":200,
+        "name":"ITALIAN DARK ROAST",
+        "img":"../img/yirgacheffe.jpg"
+    }
+]
