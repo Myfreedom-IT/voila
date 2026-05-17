@@ -15,7 +15,7 @@
         },
         "name": "Американо",
         "description":"горячая вода ,эспрессо.",
-        "img": "../img/AMERICANO.jpg"
+        "img": "./img/AMERICANO.jpg"
     },
     {
         "id": 2,
@@ -29,7 +29,7 @@
         },
         "name": "Латте",
         "description": " эспрессо,горячее молоко",
-        "img": "../img/LATTE.jpg"
+        "img": "./img/LATTE.jpg"
     },
     {
         "id": 3,
@@ -47,7 +47,7 @@
         },
         "name": "Капучино",
         "description": " эспрессо ,пышная молочная пена,горячее молоко",
-        "img": "../img/CAPU.jpg"
+        "img": "./img/CAPU.jpg"
     },
     {
         "id": 4,
@@ -61,7 +61,7 @@
         },
         "name": "Флэт уайт",
         "description": " эспрессо,молоко вспененное, тонкий слой молочной пены",
-        "img": "../img/FLAT.jpg"
+        "img": "./img/FLAT.jpg"
     },
     {
         "id": 5,
@@ -75,7 +75,7 @@
         },
         "name": "Раф",
         "description": "эспрессо, сливки, ванильный сироп",
-        "img": "../img/RAF.jpg"
+        "img": "./img/RAF.jpg"
     },
     {
         "id": 6,
@@ -85,6 +85,6 @@
         },
         "name": "Эксперссо",
         "description": " молотый кофе, вода.",
-        "img": "../img/ASSPRESSO.jpg"
+        "img": "./img/ASSPRESSO.jpg"
     }
 ]
