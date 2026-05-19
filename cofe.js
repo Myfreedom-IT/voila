@@ -5,9 +5,9 @@ const cards = document.querySelector('.boxs')
 const renderInformaton = (info) => {
 
     for (let i = 0; i < info.length; i++) {
-        let sButton = info[i].s ? `<button class="button-size" data-id="${info[i].id}" data-size-key="s" data-volume="${info[i].s.size}" data-price="${info[i].s.price}" data-photo="${info[i].img}">Маленький</button>`: ''
-        let mButton = info[i].m ? `<button class="button-size" data-id="${info[i].id}" data-size-key="m" data-volume="${info[i].m.size}" data-price="${info[i].m.price}" data-photo="${info[i].img}">Средний</button>`: ''
-        let lButton = info[i].l ? `<button class="button-size" data-id="${info[i].id}" data-size-key="l" data-volume="${info[i].l.size}" data-price="${info[i].l.price}" data-photo="${info[i].img}">Большой</button>`: ''
+        let sButton = info[i].s ? `<button class="button-size" data-id="${info[i].id}" data-size-key="s" data-volume="${info[i].s.size}" data-price="${info[i].s.price}" data-photo="${info[i].img2}">Маленький</button>`: ''
+        let mButton = info[i].m ? `<button class="button-size" data-id="${info[i].id}" data-size-key="m" data-volume="${info[i].m.size}" data-price="${info[i].m.price}" data-photo="${info[i].img2}">Средний</button>`: ''
+        let lButton = info[i].l ? `<button class="button-size" data-id="${info[i].id}" data-size-key="l" data-volume="${info[i].l.size}" data-price="${info[i].l.price}" data-photo="${info[i].img2}">Большой</button>`: ''
         let sSize = info[i].s ? `<p class ="button-size-text">S: объём ${info[i].s.size}мл, цена ${info[i].s.price}руб </p>` : ''
         let mSize = info[i].m ? `<p>M: объём ${info[i].m.size}мл, цена ${info[i].m.price}руб</p>` : ''
         let lSize = info[i].l ? `<p>L: объём ${info[i].l.size}мл, цена ${info[i].l.price}руб</p>` : ''
@@ -46,7 +46,20 @@ fetch("./cofe.json")
         renderInformaton(info)
     })
 
+const blockMenu = document.getElementById('menu')
+const main = document.querySelector('main')
 
+document.addEventListener('click', (event) => {
+    const clickedElement = event.target
+     if(clickedElement.matches('.btn-menu-open')){
+        // main.style.marginRight = '250px';
+        blockMenu.classList.add('open')
+    }
+    if(clickedElement.matches(".btn-close-block")){
+        // main.style.marginRight = '0';
+        blockMenu.classList.remove('open')
+    }  
+})
 
 
 function initBasket() {

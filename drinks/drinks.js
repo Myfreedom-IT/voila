@@ -89,7 +89,7 @@ function initBasket() {
                 id: Number(currentCard.dataset.id),
                 name: currentCard.querySelector('.name-product').innerText,
                 price: Number(currentCard.dataset.price),
-                 photo: currentCard.dataset.photo,
+                photo: currentCard.dataset.photo,
                 volume: Number(currentCard.dataset.volume),
                 size: currentCard.dataset.sizeKey
             }

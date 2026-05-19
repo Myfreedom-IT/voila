@@ -11,15 +11,59 @@
     background-color: rgb(226, 217, 200);
     padding: 20px 0 20px 0;
 } */
+ .content-window {
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    max-width: 700px;
+    max-height: 300px;
+    background-color: azure;
+    border-radius: 20px;
+}
+ .content-window p{
+    font-size: 17px;
+ }
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+}
+.popup {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.701);
+    transition: .8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+}
+.pay-box{
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    width: 300px;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sum{
+    font-size: 20px;
+}
 .main-box{
     display: flex;
     gap: 20px;
 }
 .close{
+    visibility: hidden;
     opacity: 0;
-}
-.open{
-    opacity: 1;
 }
 .fa-face-frown-open{
     font-size: 100px;
@@ -29,7 +73,8 @@
     text-align: center;
 }
 main{
-    min-height: 300px;
+    position: relative;
+    padding: 50px 0 ;
 }
 .quantity-button{
     width: 30px;
@@ -157,12 +202,15 @@ main{
     max-height: 92px;
 }
 
-
 .button-buy{
+    width: 100%;
+}
+button{
     border-radius: 5px;
     padding: 5px;
     color: white;
     background-color: rgb(42, 0, 0);
+    border: rgb(42, 0, 0) 1px solid;
     font-size: 15px;
     transition-duration: 1s;
 

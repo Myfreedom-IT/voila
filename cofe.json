@@ -15,7 +15,8 @@
         },
         "name": "Американо",
         "description":"горячая вода ,эспрессо.",
-        "img": "./img/AMERICANO.jpg"
+        "img": "./img/AMERICANO.jpg",
+        "img2":"../img/AMERICANO.jpg"
     },
     {
         "id": 2,
@@ -28,8 +29,9 @@
             "price":9.5
         },
         "name": "Латте",
-        "description": " эспрессо,горячее молоко",
-        "img": "./img/LATTE.jpg"
+        "description": "эспрессо,горячее молоко",
+        "img": "./img/LATTE.jpg",
+        "img2":"../img/LATTE.jpg"
     },
     {
         "id": 3,
@@ -46,8 +48,9 @@
             "price":11
         },
         "name": "Капучино",
-        "description": " эспрессо ,пышная молочная пена,горячее молоко",
-        "img": "./img/CAPU.jpg"
+        "description": "эспрессо ,пышная молочная пена,горячее молоко",
+        "img": "./img/CAPU.jpg",
+        "img2":"../img/CAPU.jpg"
     },
     {
         "id": 4,
@@ -60,8 +63,9 @@
             "price":11
         },
         "name": "Флэт уайт",
-        "description": " эспрессо,молоко вспененное, тонкий слой молочной пены",
-        "img": "./img/FLAT.jpg"
+        "description": "эспрессо,молоко вспененное, тонкий слой молочной пены",
+        "img": "./img/FLAT.jpg",
+        "img2":"../img/FLAT.jpg"
     },
     {
         "id": 5,
@@ -75,7 +79,8 @@
         },
         "name": "Раф",
         "description": "эспрессо, сливки, ванильный сироп",
-        "img": "./img/RAF.jpg"
+        "img": "./img/RAF.jpg",
+        "img2":"../img/RAF.jpg"
     },
     {
         "id": 6,
@@ -84,7 +89,8 @@
             "price":5.5
         },
         "name": "Эксперссо",
-        "description": " молотый кофе, вода.",
-        "img": "./img/ASSPRESSO.jpg"
+        "description": "молотый кофе, вода.",
+        "img": "./img/ASSPRESSO.jpg",
+        "img2":"../img/ASSPRESSO.jpg"
     }
 ]
