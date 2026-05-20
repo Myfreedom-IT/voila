@@ -11,6 +11,79 @@
     background-color: rgb(226, 217, 200);
     padding: 20px 0 20px 0;
 } */
+  main{
+    transition: 0.5s;
+}
+.box-nav-menu{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    font-size: 20px;
+    color:rgb(41, 0, 0) ;
+}
+.nav-link-menu{
+    font-size: 20px;
+    color:rgb(41, 0, 0) ;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.content-menu{
+    padding: 20px;
+    
+}
+ .btn-menu-open{
+    font-size: 20px;
+    color: white;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+.block-menu.open{
+    opacity: 1;
+    visibility: visible;
+    width: 250px;
+}
+ .btn-close-block{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border-radius: 3px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: rgb(42, 0, 0) 1px solid;
+    color: white;
+    background-color: rgb(42, 0, 0);
+}
+.block-menu{
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(226, 217, 200);
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+}
+.nav-link{
+    font-size: 30px;
+    
+}
  .content-window {
     text-align: center;
     padding: 25px;
@@ -360,10 +433,16 @@ footer .container{
   font-family: "Playfair", serif;
   color: white;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1440px;
+}
 footer{
   background-color: #30261C;
   padding: 20px;
+
 }
 
 .privacy, .services, .about-us, .information, .social-media, .footer-coffee{
@@ -403,3 +482,203 @@ li{
       font-weight: 400;
       font-style: normal;
 }
+@media (max-width: 1170px) {
+  .coffee-beans-class{ display: none;}
+  .text-banner{
+    font-size: 25px;
+  }
+}
+@media (max-width: 1050px) {
+  .container{
+    max-width: 95%;
+  }
+}
+
+/* 📱 Планшеты */
+@media (max-width: 900px) {
+
+  .nav-wrapper {
+    display: none;
+  }
+
+  .btn-menu-open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header-wrapper {
+    justify-content: space-between;
+  }
+
+  .name {
+    font-size: 60px;
+  }
+
+  .header-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .boxs {
+    justify-content: center;
+  }
+
+  .box {
+    max-width: 45%;
+  }
+}
+
+
+/* 📱 Телефоны */
+@media (max-width: 600px) {
+
+  .name {
+    font-size: 40px;
+  }
+
+  .header-text h1 {
+    font-size: 26px;
+  }
+
+  .header-text p {
+    font-size: 18px;
+  }
+
+  .boxs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    max-width: 90%;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .photo-banner {
+    display: none;
+  }
+
+  .text-banner {
+    font-size: 16px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+
+/* 📱 Очень маленькие экраны */
+@media (max-width: 400px) {
+
+  .name {
+    font-size: 30px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+
+  .button-buy {
+    font-size: 14px;
+  }
+
+  .button-size {
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  .info-volume-price p {
+    font-size: 18px;
+  }
+
+}
+
+.image-container {
+             position: relative;  /*Важно! Родитель с relative */
+            display: inline-block;  /* Чтобы контейнер был по размеру фона */
+        }
+        
+        /* Фоновая (большая) картинка */
+        /* .background-image {
+            display: block;
+            width: 100%;        /* Или задайте конкретную ширину */
+            /* max-width: 800px;   /* Например, 800px */
+            /* height: auto; */
+        /* } */ */ */
+        
+        /* Маленькая картинка поверх */
+        .small-image {
+            position: absolute;   /* Абсолютное позиционирование */
+            /* width: 50px;          /* Размер маленькой картинки */
+            /* height: 50px; */ 
+            cursor: pointer;
+            /* transition: transform 0.2s; */
+        }
+        
+        /* .small-image:hover {
+            transform: scale(1.1);
+        } */
+        
+        /* Всплывающее окошко */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 220px;
+            background: white;
+            border-radius: 10px;
+            padding: 12px 15px;
+            /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
+            display: none;
+            /* z-index: 1000; */
+            /* font-family: Arial, sans-serif; */
+            border: 1px solid #ddd;
+        }
+        
+        .popup-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .popup-text {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .close-popup {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            float: right;
+        }
+        
+        .close-popup:hover {
+            background: #cc0000;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }

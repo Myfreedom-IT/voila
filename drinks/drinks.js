@@ -47,7 +47,20 @@ fetch("./drinks.json")
         renderInformaton(info)
     })
 
+const blockMenu = document.getElementById('menu')
+const main = document.querySelector('main')
 
+document.addEventListener('click', (event) => {
+    const clickedElement = event.target
+     if(clickedElement.matches('.btn-menu-open')){
+        // main.style.marginRight = '250px';
+        blockMenu.classList.add('open')
+    }
+    if(clickedElement.matches(".btn-close-block")){
+        // main.style.marginRight = '0';
+        blockMenu.classList.remove('open')
+    }  
+})
 
 function initBasket() {
     document.addEventListener('click', (event) => {
