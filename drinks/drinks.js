@@ -65,9 +65,9 @@ document.addEventListener('click', (event) => {
 function initBasket() {
     document.addEventListener('click', (event) => {
         const clickedElement = event.target
-
         // выбор размера
         if (clickedElement.classList.contains('button-size')) {
+            
             const currentCard = clickedElement.closest('.box')
             const sizeButtons = currentCard.querySelectorAll('.button-size')
 
@@ -106,11 +106,9 @@ function initBasket() {
                 volume: Number(currentCard.dataset.volume),
                 size: currentCard.dataset.sizeKey
             }
-
             let basket = JSON.parse(localStorage.getItem('basket')) || []
 
             basket.push(product)
-            localStorage.clear()
             localStorage.setItem('basket', JSON.stringify(basket))
 
             const inBusket = document.querySelector('.in-busket')

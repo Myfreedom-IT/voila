@@ -493,7 +493,11 @@ li{
     max-width: 95%;
   }
 }
-
+@media (max-width: 930px) {
+    .text-banner{
+        font-size: 20px;
+    }
+}
 /* 📱 Планшеты */
 @media (max-width: 900px) {
 
@@ -633,21 +637,7 @@ li{
             transform: scale(1.1);
         } */
         
-        /* Всплывающее окошко */
-        .popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 220px;
-            background: white;
-            border-radius: 10px;
-            padding: 12px 15px;
-            /* box-shadow: 0 4px 15px rgba(0,0,0,0.2); */
-            display: none;
-            /* z-index: 1000; */
-            /* font-family: Arial, sans-serif; */
-            border: 1px solid #ddd;
-        }
+        
         
         .popup-title {
             font-weight: bold;
