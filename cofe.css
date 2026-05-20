@@ -269,7 +269,7 @@ button{
 }
 
 header {
-  background-image: url(../img/coffe-backround.png);
+  background-image: url(./img/coffe-backround.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 126px 0 115px;
